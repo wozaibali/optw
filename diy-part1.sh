@@ -9,7 +9,8 @@
 # File name: diy-part1.sh
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
-git clone https://github.com/Hyy2001X/AutoBuild-Packages/tree/master/luci-app-adguardhome package/luci-app-adguardhome
+echo 'src-git adg https://github.com/Hyy2001X/AutoBuild-Packages/tree/master/luci-app-adguardhome' >>feeds.conf.default
+#git clone https://github.com/Hyy2001X/AutoBuild-Packages/tree/master/luci-app-adguardhome package/luci-app-adguardhome
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
